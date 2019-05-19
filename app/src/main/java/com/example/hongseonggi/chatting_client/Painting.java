@@ -46,14 +46,9 @@ public class Painting extends AppCompatActivity implements View.OnClickListener 
         save = (Button)findViewById(R.id.save);
 
         colorbtn = new Button[4];
-        colorbtn[0] = (Button)findViewById(R.id.black);
-        colorbtn[1] = (Button)findViewById(R.id.red);
-        colorbtn[2] = (Button)findViewById(R.id.green);
-        colorbtn[3] = (Button)findViewById(R.id.blue);
-
-
-
-
+        colorbtn[0] = (Button)findViewById(R.id.colorselect);
+        colorbtn[1] = (Button)findViewById(R.id.up);
+        colorbtn[2] = (Button)findViewById(R.id.down);
 
          reset.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,19 +97,18 @@ public class Painting extends AppCompatActivity implements View.OnClickListener 
     {
         switch(v.getId())
         {
-            case R.id.black:
+            case R.id.colorselect:
                 Intent intent = new Intent(getApplicationContext(),ColorDialog.class);
                 startActivityForResult(intent,101);
                 break;
-            case R.id.red:
-                drawing.setColor(Color.RED);
+            case R.id.up:
+                drawing.setLineWith(drawing.getLineWith()+1);
+                Toast.makeText(getApplicationContext(),"선 굵기 : "+drawing.getLineWith(),Toast.LENGTH_LONG).show();
                 break;
-            case R.id.green:
-                drawing.setColor(Color.GREEN);
-                break;
-            case R.id.blue:
-                drawing.setColor(Color.BLUE);
-                break;
+            case R.id.down:
+                if(drawing.getLineWith()>1)
+                    drawing.setLineWith(drawing.getLineWith()-1);
+                Toast.makeText(getApplicationContext(),"선 굵기 : "+drawing.getLineWith(),Toast.LENGTH_LONG).show();
         }
     }
 }

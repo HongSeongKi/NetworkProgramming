@@ -17,43 +17,41 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:weightSum="4">
+        android:weightSum="2">
 
         <Button
-            android:id="@+id/black"
+            android:id="@+id/colorselect"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="#000000"
+            android:text="색상 선택"
             android:onClick="onClick"></Button>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin ="5dp"
+            android:layout_weight ="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/up"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Up"
+                android:onClick="onClick"></Button>
 
-        <Button
-            android:id="@+id/red"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="#FF0000"
-            android:onClick="onClick"></Button>
-
-        <Button
-            android:id="@+id/green"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="#00FF00"
-            android:onClick="onClick"></Button>
-
-        <Button
-            android:id="@+id/blue"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="#0000FF"
-            android:onClick="onClick"></Button>
+            <Button
+                android:id = "@+id/down"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Down"
+                android:onClick="onClick"/>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
