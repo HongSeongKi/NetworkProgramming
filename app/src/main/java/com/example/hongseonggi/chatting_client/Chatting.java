@@ -60,10 +60,12 @@ public class Chatting extends AppCompatActivity {
         }
     }*/
 
+    private DrawView drawing;
     Button button;
     EditText editText;
     TextView textView;
     Button paint;
+    Button sendbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,6 +78,9 @@ public class Chatting extends AppCompatActivity {
         }*/
 
         printThread.start();
+
+        drawing = (DrawView)findViewById(R.id.drawingView);
+        sendbtn = (Button)findViewById(R.id.send);
         paint = (Button)findViewById(R.id.paint);
         button = (Button)findViewById(R.id.button);
         editText = (EditText)findViewById(R.id.editText);
@@ -91,6 +96,13 @@ public class Chatting extends AppCompatActivity {
                 else{
                     textView.setText(textView.getText().toString()+"\n"+str);
                 }
+            }
+        });
+
+        sendbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawing.save(Chatting.this);
             }
         });
 

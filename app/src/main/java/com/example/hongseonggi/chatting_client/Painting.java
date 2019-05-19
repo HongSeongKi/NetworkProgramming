@@ -63,7 +63,7 @@ public class Painting extends AppCompatActivity {
             }
         });
     }
-         /*save.setOnClickListener(new View.OnClickListener() {
+        /* save.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
                 View rootView = getWindow().getDecorView();
@@ -74,9 +74,9 @@ public class Painting extends AppCompatActivity {
                 }
                 Toast.makeText(getApplicationContext(),"저장완료",Toast.LENGTH_LONG).show();
              }
-         }); //그림을 서버로 보내기
-    }
-    public File ScreenShot(View view){
+         }); //그림을 서버로 보내기*/
+
+    /*public File ScreenShot(View view){
         view.setDrawingCacheEnabled(true);  //화면에 뿌릴때 캐시를 사용하게 한다
 
         Bitmap screenBitmap = view.getDrawingCache();   //캐시를 비트맵으로 변환
