@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -85,9 +86,11 @@ public class DrawView extends View implements View.OnTouchListener{
         invalidate();
     }
 
-   /* public void save(Context context){
+    public void save(Context context){
         this.setDrawingCacheEnabled(true);
         Bitmap screenshot = this.getDrawingCache();
+
+        Toast.makeText(getContext(), "save버튼 호출", Toast.LENGTH_SHORT).show();
 
        // @SuppressLint("SimpleDateFormat")SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmss");
         //Date currentTime = new Date();
@@ -114,7 +117,7 @@ public class DrawView extends View implements View.OnTouchListener{
             e.printStackTrace();
         }
         this.setDrawingCacheEnabled(false);
-    }*/
+    }
 
     public int getColor() {
         return color;

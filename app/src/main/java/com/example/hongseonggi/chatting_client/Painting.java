@@ -17,7 +17,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Painting extends AppCompatActivity implements View.OnClickListener {
+public class Painting extends AppCompatActivity {
 
 
     private DrawView drawing;
@@ -41,23 +41,29 @@ public class Painting extends AppCompatActivity implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_draw);
 
-        drawing = (DrawView)findViewById(R.id.drawingView);
-        reset = (Button)findViewById(R.id.reset);
-        save = (Button)findViewById(R.id.save);
+        drawing = (DrawView) findViewById(R.id.drawingView);
+        reset = (Button) findViewById(R.id.reset);
+        save = (Button) findViewById(R.id.save);
 
         colorbtn = new Button[4];
-        colorbtn[0] = (Button)findViewById(R.id.colorselect);
-        colorbtn[1] = (Button)findViewById(R.id.up);
-        colorbtn[2] = (Button)findViewById(R.id.down);
+        colorbtn[0] = (Button) findViewById(R.id.colorselect);
+        colorbtn[1] = (Button) findViewById(R.id.up);
+        colorbtn[2] = (Button) findViewById(R.id.down);
 
-         reset.setOnClickListener(new View.OnClickListener() {
+        reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               drawing.reset();
+                drawing.reset();
             }
         });
-
-         save.setOnClickListener(new View.OnClickListener() {
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawing.save(Painting.this);
+            }
+        });
+    }
+         /*save.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
                 View rootView = getWindow().getDecorView();
@@ -89,7 +95,7 @@ public class Painting extends AppCompatActivity implements View.OnClickListener 
 
         view.setDrawingCacheEnabled(false);
         return file;
-    }
+    }*/
 
 
 
