@@ -1,0 +1,174 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:2:1-28:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\45db86c2786dca76cc0b0b3b33776b4e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\2e621d0a5a4b54a81aec0b5b546c41b0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\11a6623c8e17351ac2ac02fb5ab09dc3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\620d55cf46b21c9270be9f653e244272\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\0d024cedfe48cb579da6eb39988f5cf4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\5ea65e1badf3e71720e2e2b82bd139c9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\358adc843dee53ec62411a2a562c1ff0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\9a77d65a78f694348b82245444fc74e1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\3c3cf74a58a4c152258825d061cf2407\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\1dc74bc4db1a1a3f263b3f65eb24e2d9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\c870d2bf5e53a53bc06956ef1dac195a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\6258960fa74024ac2fd2f3b96e20ad30\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\657524174f1e3e391aa75b2f44748be8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\3afdb341928d8698a398787909d9203d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\6ac2a7cc9f2532ff93ac4e702ae5ddfc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\53784997da9c9a8a8bd2c6b6ef5c9714\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\b87df3ae980e0303a91ee441980eca6f\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\64c1bbeb7327c3ba0b5a4b40b7a1b045\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\6782eab6fadb9198190a16ab049eafa2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\4bc1d5d9f74fbfbc46ec5eac677da6c0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\fbea1465eb8b5e3e931e8da6129b2223\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\9b58109d17d9e0c1df9dfa795828ed5d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\25ecc3654bfc0c05adb62a909664c577\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\0b1b91bfa6cd2a57a081267f67f370db\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\0c125256ba338af5d5e9c62c6ac4bd82\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\84fbc2c09e93bcb46300d38cefbf53da\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\98e10ed89f905ad6826f2e412815fdbd\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:2:1-28:12
+	package
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:3:1-42
+		INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:2:1-28:12
+		INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:2:1-28:12
+		INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:6:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:7:22-78
+application
+ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:9:5-27:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\2e621d0a5a4b54a81aec0b5b546c41b0\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\2e621d0a5a4b54a81aec0b5b546c41b0\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\53784997da9c9a8a8bd2c6b6ef5c9714\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\53784997da9c9a8a8bd2c6b6ef5c9714\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\b87df3ae980e0303a91ee441980eca6f\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\b87df3ae980e0303a91ee441980eca6f\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\53784997da9c9a8a8bd2c6b6ef5c9714\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:15:9-40
+activity#com.example.kvlks.chatting_test.MainActivity
+ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:16:9-22:20
+	android:name
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:16:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:20:27-74
+service#com.example.kvlks.chatting_test.ChatService
+ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:23:9-26:46
+	android:enabled
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:26:13-35
+	android:exported
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml:24:13-71
+uses-sdk
+INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\45db86c2786dca76cc0b0b3b33776b4e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\45db86c2786dca76cc0b0b3b33776b4e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\2e621d0a5a4b54a81aec0b5b546c41b0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\2e621d0a5a4b54a81aec0b5b546c41b0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\11a6623c8e17351ac2ac02fb5ab09dc3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\11a6623c8e17351ac2ac02fb5ab09dc3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\620d55cf46b21c9270be9f653e244272\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\620d55cf46b21c9270be9f653e244272\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\0d024cedfe48cb579da6eb39988f5cf4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\0d024cedfe48cb579da6eb39988f5cf4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\5ea65e1badf3e71720e2e2b82bd139c9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\5ea65e1badf3e71720e2e2b82bd139c9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\358adc843dee53ec62411a2a562c1ff0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\358adc843dee53ec62411a2a562c1ff0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\9a77d65a78f694348b82245444fc74e1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\9a77d65a78f694348b82245444fc74e1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\3c3cf74a58a4c152258825d061cf2407\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\3c3cf74a58a4c152258825d061cf2407\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\1dc74bc4db1a1a3f263b3f65eb24e2d9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\1dc74bc4db1a1a3f263b3f65eb24e2d9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\c870d2bf5e53a53bc06956ef1dac195a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\c870d2bf5e53a53bc06956ef1dac195a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\6258960fa74024ac2fd2f3b96e20ad30\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\6258960fa74024ac2fd2f3b96e20ad30\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\657524174f1e3e391aa75b2f44748be8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\657524174f1e3e391aa75b2f44748be8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\3afdb341928d8698a398787909d9203d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\3afdb341928d8698a398787909d9203d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\6ac2a7cc9f2532ff93ac4e702ae5ddfc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\6ac2a7cc9f2532ff93ac4e702ae5ddfc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\53784997da9c9a8a8bd2c6b6ef5c9714\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\53784997da9c9a8a8bd2c6b6ef5c9714\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\b87df3ae980e0303a91ee441980eca6f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\b87df3ae980e0303a91ee441980eca6f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\64c1bbeb7327c3ba0b5a4b40b7a1b045\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\64c1bbeb7327c3ba0b5a4b40b7a1b045\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\6782eab6fadb9198190a16ab049eafa2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\6782eab6fadb9198190a16ab049eafa2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\4bc1d5d9f74fbfbc46ec5eac677da6c0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\4bc1d5d9f74fbfbc46ec5eac677da6c0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\fbea1465eb8b5e3e931e8da6129b2223\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\fbea1465eb8b5e3e931e8da6129b2223\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\9b58109d17d9e0c1df9dfa795828ed5d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\9b58109d17d9e0c1df9dfa795828ed5d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\25ecc3654bfc0c05adb62a909664c577\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\25ecc3654bfc0c05adb62a909664c577\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\0b1b91bfa6cd2a57a081267f67f370db\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\0b1b91bfa6cd2a57a081267f67f370db\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\0c125256ba338af5d5e9c62c6ac4bd82\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\0c125256ba338af5d5e9c62c6ac4bd82\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\84fbc2c09e93bcb46300d38cefbf53da\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\84fbc2c09e93bcb46300d38cefbf53da\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\98e10ed89f905ad6826f2e412815fdbd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\kvlks\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\98e10ed89f905ad6826f2e412815fdbd\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\kvlks\git\Chatting_test\app\src\main\AndroidManifest.xml

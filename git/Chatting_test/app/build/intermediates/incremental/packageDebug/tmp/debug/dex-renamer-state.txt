@@ -1,0 +1,4 @@
+#Sun May 19 21:44:31 KST 2019
+base.0=C\:\\Users\\kvlks\\git\\Chatting_test\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
