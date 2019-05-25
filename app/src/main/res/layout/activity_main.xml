@@ -7,23 +7,16 @@
     android:orientation = "vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text = "메인화면"
-        android:textSize="40dp"
-        android:textAlignment="center"
-        />
+   <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="match_parent"
+       android:layout_height="400dp">
+   </ImageView>
 
-    <Button
+    <ImageView
         android:id="@+id/chat"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="채팅화면으로 이동" />
-
-    <com.example.hongseonggi.chatting_client.DrawView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </com.example.hongseonggi.chatting_client.DrawView>
+        android:layout_height="100dp"
+        android:src="@drawable/enter3" />
 
 </LinearLayout>

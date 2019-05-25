@@ -1,6 +1,7 @@
 package com.example.hongseonggi.chatting_client;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -68,11 +70,10 @@ public class Chatting extends AppCompatActivity {
     private DrawView drawing;
      ListView listView;
     ArrayList<String> Data ;
-    Button button;
+    ImageView button;  //확인
     EditText editText;
     TextView textView;
-    Button paint;
-    Button sendbtn;
+    ImageView paint;// 그림
     ChattingAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,12 +89,11 @@ public class Chatting extends AppCompatActivity {
 
         printThread.start();
 
-        drawing = (DrawView) findViewById(R.id.drawingView);
-        sendbtn = (Button) findViewById(R.id.send);
-        paint = (Button) findViewById(R.id.paint);
-        button = (Button) findViewById(R.id.button); //확인버튼
+        paint = (ImageView) findViewById(R.id.paint); //
+        button = (ImageView) findViewById(R.id.button); //확인버튼
         editText = (EditText) findViewById(R.id.editText);
         listView = (ListView) findViewById(R.id.listView);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -107,12 +107,7 @@ public class Chatting extends AppCompatActivity {
             }
         });
 
-        sendbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                drawing.save(Chatting.this);
-            }
-        });
+
 
         paint.setOnClickListener(new View.OnClickListener() {
             @Override

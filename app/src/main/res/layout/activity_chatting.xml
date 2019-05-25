@@ -5,54 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="16"
-    tools:context=".Chatting">
-
-
+    tools:context=".Chatting"
+   >
 
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height = "0dp"
-        android:layout_weight="12"
+        android:layout_height = "10dp"
+        android:layout_weight="15"
         android:divider="@android:color/transparent"
         android:dividerHeight="8dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:orientation="horizontal"
-        android:weightSum="7">
-
-        <com.example.hongseonggi.chatting_client.DrawView
-            android:id="@+id/drawingView"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="5"
-            android:background="#FFFF00" />
-
-        <Button
-            android:id="@+id/send"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="보내기"></Button>
-        <Button
-            android:id="@+id/delete"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="지우기"></Button>
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight ="2"
+        android:layout_height="40dp"
         android:orientation = "horizontal"
-        android:weightSum="7">
+        android:weightSum="8">
 
         <EditText
             android:id="@+id/editText"
@@ -61,21 +30,30 @@
             android:layout_weight="5"
             android:hint="글자를 입력하시오" />
 
-        <Button
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight = "1"
+            android:src="@drawable/camera"/>
+
+        <ImageView
             android:id="@+id/paint"
             android:layout_width = "0dp"
-            android:layout_height = "match_parent"
             android:layout_weight="1"
-            android:text="그림">
-        </Button>
+            android:layout_height = "match_parent"
+            android:text="그림"
+            android:src="@drawable/draw">
+        </ImageView>
 
-        <Button
+        <ImageView
             android:id ="@+id/button"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight = "1"
-            android:text="확인">
-        </Button>
+            android:text="보내기"
+            android:src="@drawable/ok">
+        </ImageView>
     </LinearLayout>
 
 
