@@ -5,8 +5,12 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +20,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
+import java.util.ArrayList;
 
 public class Chatting extends AppCompatActivity {
 
@@ -61,16 +66,20 @@ public class Chatting extends AppCompatActivity {
     }*/
 
     private DrawView drawing;
+     ListView listView;
+    ArrayList<String> Data ;
     Button button;
     EditText editText;
     TextView textView;
     Button paint;
     Button sendbtn;
+    ChattingAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatting);
         mHandler = new Handler();
+
        /* try{
          //   setSocket(ip,port);
         }catch(IOException e1){
@@ -79,22 +88,21 @@ public class Chatting extends AppCompatActivity {
 
         printThread.start();
 
-        drawing = (DrawView)findViewById(R.id.drawingView);
-        sendbtn = (Button)findViewById(R.id.send);
-        paint = (Button)findViewById(R.id.paint);
-        button = (Button)findViewById(R.id.button);
-        editText = (EditText)findViewById(R.id.editText);
-        textView = (TextView)findViewById(R.id.textView);
+        drawing = (DrawView) findViewById(R.id.drawingView);
+        sendbtn = (Button) findViewById(R.id.send);
+        paint = (Button) findViewById(R.id.paint);
+        button = (Button) findViewById(R.id.button); //확인버튼
+        editText = (EditText) findViewById(R.id.editText);
+        listView = (ListView) findViewById(R.id.listView);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String str = editText.getText().toString();
                 System.out.println(str);
-                if(str ==null || str.equals(""))
-                {
-                }
-                else{
-                    textView.setText(textView.getText().toString()+"\n"+str);
+                if (str == null || str.equals("")) {
+                } else {
+                    String content = editText.getText().toString();
+                    adapter.addItem(new Useritem("성기",content));
                 }
             }
         });
@@ -109,12 +117,54 @@ public class Chatting extends AppCompatActivity {
         paint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Painting.class);
+                Intent intent = new Intent(getApplicationContext(), Painting.class);
                 startActivity(intent);
             }
         });
 
+        adapter = new ChattingAdapter();
+        adapter.addItem(new Useritem("희원","나는 갓이다잉"));
+        adapter.addItem(new Useritem("지혜","내가 더 갓이다잉"));
+        adapter.addItem(new Useritem("성기","너희 둘이가 짱이다잉"));
+        listView.setAdapter(adapter);
     }
+
+    public class ChattingAdapter extends BaseAdapter {
+        ArrayList<Useritem> items = new ArrayList<Useritem>();
+
+        @Override
+        public int getCount() {
+            return items.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return items.get(position);
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        public void addItem(Useritem item) {
+            items.add(item);
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            UseritemView view = new UseritemView(getApplicationContext());
+            Useritem item = items.get(position);
+
+            view.setName(item.getName());
+            view.setContents(item.getContents());
+            return view;
+
+        }
+    }
+
+
+
 
     /*public void setSocket(String ip,int port) throws IOException{
         try{

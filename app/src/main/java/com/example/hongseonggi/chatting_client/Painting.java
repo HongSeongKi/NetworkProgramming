@@ -63,39 +63,6 @@ public class Painting extends AppCompatActivity {
             }
         });
     }
-        /* save.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-                View rootView = getWindow().getDecorView();
-
-                File screenShot = ScreenShot(rootView);
-                if(screenShot!=null){
-                    sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.fromFile(screenShot)));
-                }
-                Toast.makeText(getApplicationContext(),"저장완료",Toast.LENGTH_LONG).show();
-             }
-         }); //그림을 서버로 보내기*/
-
-    /*public File ScreenShot(View view){
-        view.setDrawingCacheEnabled(true);  //화면에 뿌릴때 캐시를 사용하게 한다
-
-        Bitmap screenBitmap = view.getDrawingCache();   //캐시를 비트맵으로 변환
-
-        String filename = "screenshot.png";
-        File file = new File(Environment.getExternalStorageDirectory(), filename);  //screenshot.png 파일
-        FileOutputStream os = null;
-        try{
-            os = new FileOutputStream(file);
-            screenBitmap.compress(Bitmap.CompressFormat.PNG, 90, os);   //비트맵을 PNG파일로 변환
-            os.close();
-        }catch (IOException e){
-            e.printStackTrace();
-            return null;
-        }
-
-        view.setDrawingCacheEnabled(false);
-        return file;
-    }*/
 
 
 
