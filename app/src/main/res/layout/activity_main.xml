@@ -7,15 +7,18 @@
     android:orientation = "vertical"
     tools:context=".MainActivity">
 
+
    <ImageView
+       android:layout_marginTop="100dp"
        android:id="@+id/imageView"
        android:layout_width="match_parent"
-       android:layout_height="400dp">
+       android:layout_height="300dp">
    </ImageView>
 
     <ImageView
         android:id="@+id/chat"
-        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_width="200dp"
         android:layout_height="100dp"
         android:src="@drawable/enter3" />
 

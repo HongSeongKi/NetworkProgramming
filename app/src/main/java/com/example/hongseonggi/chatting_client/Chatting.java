@@ -69,8 +69,9 @@ public class Chatting extends AppCompatActivity {
 
     private DrawView drawing;
      ListView listView;
+     ImageView camera;
     ArrayList<String> Data ;
-    ImageView button;  //확인
+    ImageView ok;  //확인
     EditText editText;
     TextView textView;
     ImageView paint;// 그림
@@ -89,21 +90,24 @@ public class Chatting extends AppCompatActivity {
 
         printThread.start();
 
-        paint = (ImageView) findViewById(R.id.paint); //
-        button = (ImageView) findViewById(R.id.button); //확인버튼
+        camera = (ImageView)findViewById(R.id.camera);//카메라(사진)
+        paint = (ImageView) findViewById(R.id.paint); //그림
+        ok = (ImageView) findViewById(R.id.ok); //확인버튼
         editText = (EditText) findViewById(R.id.editText);
         listView = (ListView) findViewById(R.id.listView);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        camera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String str = editText.getText().toString();
-                System.out.println(str);
-                if (str == null || str.equals("")) {
-                } else {
-                    String content = editText.getText().toString();
-                    adapter.addItem(new Useritem("성기",content));
-                }
+
+            }
+        });
+
+
+        ok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
 
@@ -121,6 +125,7 @@ public class Chatting extends AppCompatActivity {
         adapter.addItem(new Useritem("희원","나는 갓이다잉"));
         adapter.addItem(new Useritem("지혜","내가 더 갓이다잉"));
         adapter.addItem(new Useritem("성기","너희 둘이가 짱이다잉"));
+        adapter.notifyDataSetChanged(); // 리스트뷰 갱신
         listView.setAdapter(adapter);
     }
 
@@ -148,18 +153,20 @@ public class Chatting extends AppCompatActivity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            UseritemView view = new UseritemView(getApplicationContext());
+            UseritemView view =null;
+            if(convertView == null)
+            {
+                view = new UseritemView(getApplicationContext());
+            }else{
+               view = (UseritemView)convertView;
+            }
             Useritem item = items.get(position);
 
             view.setName(item.getName());
             view.setContents(item.getContents());
             return view;
-
         }
     }
-
-
-
 
     /*public void setSocket(String ip,int port) throws IOException{
         try{
