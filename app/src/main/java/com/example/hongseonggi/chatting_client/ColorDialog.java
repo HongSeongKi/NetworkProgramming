@@ -9,12 +9,14 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class ColorDialog extends AppCompatActivity {
     GridView gridView;
     ColorAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,12 @@ public class ColorDialog extends AppCompatActivity {
         adapter.addItem(0xff00ff00);
         adapter.addItem(0xff00ffff);
         adapter.addItem(0xff0000ff);
+        adapter.addItem(0xff7f007f);
+        adapter.addItem(0xff7f00ff);
+        adapter.addItem(0xff7f7f00);
+        adapter.addItem(0xffffff7f);
+        adapter.addItem(0xffff007f);
+        adapter.addItem(0xff777777);
 
         gridView.setAdapter(adapter);
 
@@ -36,6 +44,7 @@ public class ColorDialog extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 int color = (Integer)adapter.getItem(position);
+                Toast.makeText(getApplicationContext(),"색상을 선택하셨습니다",Toast.LENGTH_LONG).show();
                 Intent intent = new Intent();
                 intent.putExtra("color",color);
                 setResult(Activity.RESULT_OK,intent);
