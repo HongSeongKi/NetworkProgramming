@@ -65,11 +65,11 @@ public class Painting extends AppCompatActivity {
             }
         });
 
-       /* save.setOnClickListener(new View.OnClickListener() {
+        save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //drawing.save(Painting.this);
-                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getApplicationContext());
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Painting.this);
                 alertDialogBuilder.setTitle("선택하세요!!");
                 alertDialogBuilder.setMessage("그림 or 글자 ?").setCancelable(false)
                         .setPositiveButton("그림",
@@ -87,7 +87,7 @@ public class Painting extends AppCompatActivity {
                                         AlertDialog alertDialog = alertDialogBuilder.create();
                                         alertDialog.show();
                                     }
-        });*/
+        });
     }
     public void onClick(View v)
     {
