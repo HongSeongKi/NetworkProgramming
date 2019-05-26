@@ -3,11 +3,13 @@ package com.example.hongseonggi.chatting_client;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class UseritemView extends LinearLayout {
 
+    private ImageView image;
     private TextView name;
     private TextView contents;
 
@@ -26,6 +28,7 @@ public class UseritemView extends LinearLayout {
         inflater.inflate(R.layout.user_item,this,true);
         name = (TextView)findViewById(R.id.name);
         contents = (TextView)findViewById(R.id.contents);
+        image = (ImageView)findViewById(R.id.image);
     }
 
     public void setName(String name2){
@@ -36,4 +39,7 @@ public class UseritemView extends LinearLayout {
         contents.setText(c);
     }
 
+    public void setImage(int resId){
+        image.setImageResource(resId);
+    }
 }
