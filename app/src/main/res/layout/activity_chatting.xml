@@ -6,15 +6,27 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Chatting"
-   >
+    >
 
-    <ListView
-        android:id="@+id/listView"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height = "10dp"
-        android:layout_weight="15"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="8dp" />
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:layout_weight="1">
+
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height = "10dp"
+            android:layout_weight="15"
+            android:transcriptMode="alwaysScroll"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dp" />
+
+    </ScrollView>
+
+
 
 
     <LinearLayout
