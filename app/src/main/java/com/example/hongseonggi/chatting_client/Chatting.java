@@ -1,9 +1,14 @@
 package com.example.hongseonggi.chatting_client;
 
+import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Environment;
 import android.os.Handler;
+import android.provider.MediaStore;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +19,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.gun0912.tedpermission.PermissionListener;
+import com.gun0912.tedpermission.TedPermission;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -37,12 +45,12 @@ public class Chatting extends AppCompatActivity {
     private BufferedWriter networkWriter;
 
     private String line;
-    private String ip= "192.168.123.122";
+    private String ip= "192.168.35.17";
     private int port = 9100;
-
+    private static final int PICK_FROM_ALBUM =1;
     String globalLine;
     String myNickName;
-
+    private File tempFile;
 
     private DrawView drawing;
     ListView listView;
@@ -53,10 +61,54 @@ public class Chatting extends AppCompatActivity {
     TextView textView;
     ImageView paint;// 그림
     ChattingAdapter adapter;
+    Uri photoUri;
+    String imageString=null;
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == PICK_FROM_ALBUM)
+        {
+            photoUri = data.getData();
+
+            Cursor cursor = null;
+            try {
+
+                /*
+                 *  Uri 스키마를
+                 *  content:/// 에서 file:/// 로  변경한다.
+                 */
+                String[] proj = { MediaStore.Images.Media.DATA };
+
+                assert photoUri != null;
+                cursor = getContentResolver().query(photoUri, proj, null, null, null);
+
+                assert cursor != null;
+                int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+
+                cursor.moveToFirst();
+
+                tempFile = new File(cursor.getString(column_index));
+
+            } finally {
+                if (cursor != null) {
+                    cursor.close();
+                }
+            }
+            String str = tempFile.toString();
+            System.out.println(str);
+            //ArrayList<String> list = new ArrayList<String>();
+            imageString = str.split("/0/")[1];
+            System.out.println(imageString);
+
+
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatting);
+        tedPermission();
         mHandler = new Handler();
 
 
@@ -89,9 +141,13 @@ public class Chatting extends AppCompatActivity {
         camera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_PICK);
+                intent.setType(MediaStore.Images.Media.CONTENT_TYPE);
+                startActivityForResult(intent, PICK_FROM_ALBUM);
 
             }
         });
+
 
 
         ok.setOnClickListener(new View.OnClickListener() {
@@ -174,7 +230,23 @@ public class Chatting extends AppCompatActivity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            adapter.addItem(new Useritem( globalLine.split("@")[0], globalLine.split("@")[2]));
+                            Useritem item = new Useritem( globalLine.split("@")[0],null,globalLine.split("@")[2]);
+                            if(globalLine.split("@")[0].equals("h"))
+                            {
+                                item.setResId(R.drawable.camera2);
+                            }
+                            else if(globalLine.split("@")[0].equals("s"))
+                            {
+                                item.setResId(R.drawable.up);
+                            }
+                            else if(globalLine.split("@")[0].equals("j"))
+                            {
+                                item.setResId(R.drawable.down);
+                            }
+                            else {
+                                item.setResId(-1);
+                            }
+                            adapter.addItem(item);
                             listView.setTranscriptMode(ListView.TRANSCRIPT_MODE_ALWAYS_SCROLL);
                             listView.setAdapter(adapter);
                             adapter.notifyDataSetChanged();
@@ -185,6 +257,27 @@ public class Chatting extends AppCompatActivity {
             }
         }
     });
+
+    public void tedPermission(){
+        PermissionListener permissionListener = new PermissionListener() {
+            @Override
+            public void onPermissionGranted() {
+                // 권한 요청 성공
+
+            }
+
+            @Override
+            public void onPermissionDenied(ArrayList<String> deniedPermissions) {
+                // 권한 요청 실패
+            }
+        };
+
+        TedPermission.with(this)
+                .setPermissionListener(permissionListener)
+                .setPermissions(Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA)
+                .check();
+
+    }
 
 
     public void setSocket(String ip, int port) throws IOException {
@@ -237,8 +330,10 @@ public class Chatting extends AppCompatActivity {
             }
             Useritem item = items.get(position);
 
+            view.setImage(item.getResId());
             view.setName(item.getName());
             view.setContents(item.getContents());
+            view.setUri(item.getUri());
             return view;
         }
     }

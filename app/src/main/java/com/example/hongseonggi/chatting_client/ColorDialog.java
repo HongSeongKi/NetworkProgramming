@@ -44,7 +44,7 @@ public class ColorDialog extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 int color = (Integer)adapter.getItem(position);
-                Toast.makeText(getApplicationContext(),"색상을 선택하셨습니다",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"색상을 선택하셨습니다",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent();
                 intent.putExtra("color",color);
                 setResult(Activity.RESULT_OK,intent);

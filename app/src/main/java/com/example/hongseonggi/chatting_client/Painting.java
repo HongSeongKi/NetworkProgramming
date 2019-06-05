@@ -57,7 +57,15 @@ public class Painting extends AppCompatActivity {
         colorbtn[1] = (ImageView) findViewById(R.id.up);
         colorbtn[2] = (ImageView) findViewById(R.id.down);
 
+        final ArrayList<String> array = new ArrayList<String>() ;
+        array.add("가");
+        array.add("갸");
+        array.add("거");
+        array.add("겨");
+        array.add("교");
+        final String[] items = new String[5];
 
+       //final String[] items={array.get(0),array.get(1),array.get(2),array.get(3),array.get(4)};
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,7 +89,22 @@ public class Painting extends AppCompatActivity {
                                 }).setNegativeButton("글자", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
-                                        dialog.cancel();
+
+
+                                            for(int i=0;i<5;i++)
+                                            {
+                                                items[i] = array.get(i);
+                                            }
+                                            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Painting.this);
+                                            alertDialogBuilder.setTitle("원하시는 글자를 선택하세요.");
+                                            alertDialogBuilder.setItems(items, new DialogInterface.OnClickListener(){
+                                                public void onClick(DialogInterface dialog, int id){
+                                                    Toast.makeText(getApplicationContext(),items[id]+" 선택했습니다.",Toast.LENGTH_SHORT).show();
+                                                }
+                                        });
+                                            AlertDialog alertDialog2 = alertDialogBuilder.create();
+                                            alertDialog2.show();
+
                                         }
                                 });
                                         AlertDialog alertDialog = alertDialogBuilder.create();

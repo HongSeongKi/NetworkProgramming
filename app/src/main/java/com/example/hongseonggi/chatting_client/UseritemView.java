@@ -1,6 +1,7 @@
 package com.example.hongseonggi.chatting_client;
 
 import android.content.Context;
+import android.net.Uri;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
@@ -12,6 +13,7 @@ public class UseritemView extends LinearLayout {
     private ImageView image;
     private TextView name;
     private TextView contents;
+    private ImageView uriImage;
 
     public UseritemView(Context context) {
         super(context);
@@ -29,6 +31,7 @@ public class UseritemView extends LinearLayout {
         name = (TextView)findViewById(R.id.name);
         contents = (TextView)findViewById(R.id.contents);
         image = (ImageView)findViewById(R.id.image);
+        uriImage = (ImageView)findViewById(R.id.uri);
     }
 
     public void setName(String name2){
@@ -40,6 +43,17 @@ public class UseritemView extends LinearLayout {
     }
 
     public void setImage(int resId){
-        image.setImageResource(resId);
+        if(resId != -1)
+            image.setImageResource(resId);
+    }
+
+    public void setUri(Uri uri){
+        if(uri == null)
+        {
+           uriImage.setImageBitmap(null);
+        }
+        else {
+            uriImage.setImageURI(uri);
+        }
     }
 }
