@@ -1,5 +1,7 @@
 package com.example.hongseonggi.chatting_client;
 
+import android.net.Uri;
+
 public class Useritem {
     private String name;
     private String contents;
@@ -32,5 +34,23 @@ public class Useritem {
 
     public void setResId(int resId) {
         this.resId = resId;
+    }
+
+    public Uri getUri() {
+        return uri;
+    }
+
+    public void setUri(Uri uri) {
+        this.uri = uri;
+    }
+
+
+
+    private Uri uri;
+
+    public Useritem(String name ,Uri uri ,String contents){
+        this.name = name;
+        this.uri = uri;
+        this.contents = contents;
     }
 }

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\kvlks\\git\\Chatting_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\source_tree\\PAPER_TALK\\git\\Chatting_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\kvlks\\.gradle\\caches\\transforms-1\\files-1.1\\constraint-layout-1.1.3.aar\\2e621d0a5a4b54a81aec0b5b546c41b0\\res\\values\\values.xml",
@@ -20,6 +20,25 @@
                         "endLines": "2,10,11,12,13,14,20,23,24,25,28,29,32,35,36,37,38,39,42,45,46,47,48,53,56,59,60,61,66,67,68,71,74,75,78,81,84,87,88,91,94,95,100,101,106,109,112,113,114,115,116,117,118,119,120,121,130",
                         "endColumns": "60,11,47,51,60,45,11,60,59,69,11,67,11,11,61,64,67,66,11,11,66,64,64,11,11,11,65,66,11,68,65,11,11,66,11,11,11,11,64,11,11,64,11,66,11,11,11,64,61,61,61,58,59,60,60,58,11",
                         "endOffsets": "161,452,500,552,613,659,902,1057,1117,1187,1320,1388,1517,1643,1705,1770,1838,1905,2028,2153,2220,2285,2350,2531,2652,2773,2839,2906,3116,3185,3251,3376,3502,3569,3695,3822,3947,4074,4139,4265,4388,4453,4661,4728,4908,5028,5148,5213,5275,5337,5399,5458,5518,5579,5640,5699,6074"
+                    }
+                },
+                {
+                    "source": "C:\\source_tree\\PAPER_TALK\\git\\Chatting_test\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "376"
+                    },
+                    "to": {
+                        "startLines": "653",
+                        "startColumns": "4",
+                        "startOffsets": "56896",
+                        "endLines": "658",
+                        "endColumns": "12",
+                        "endOffsets": "57210"
                     }
                 },
                 {
@@ -42,23 +61,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\kvlks\\git\\Chatting_test\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endColumns": "50",
-                        "endOffsets": "63"
-                    },
-                    "to": {
-                        "startLines": "645",
-                        "startColumns": "4",
-                        "startOffsets": "56279",
-                        "endColumns": "50",
-                        "endOffsets": "56325"
-                    }
-                },
-                {
                     "source": "C:\\Users\\kvlks\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\53784997da9c9a8a8bd2c6b6ef5c9714\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,171,172,176,177,178",
@@ -78,22 +80,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\kvlks\\git\\Chatting_test\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\source_tree\\PAPER_TALK\\git\\Chatting_test\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "3",
+                        "startLines": "1",
                         "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "8",
-                        "endColumns": "12",
-                        "endOffsets": "376"
+                        "startOffsets": "17",
+                        "endColumns": "50",
+                        "endOffsets": "63"
                     },
                     "to": {
-                        "startLines": "653",
+                        "startLines": "645",
                         "startColumns": "4",
-                        "startOffsets": "56896",
-                        "endLines": "658",
-                        "endColumns": "12",
-                        "endOffsets": "57210"
+                        "startOffsets": "56279",
+                        "endColumns": "50",
+                        "endOffsets": "56325"
                     }
                 },
                 {
@@ -116,7 +116,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\kvlks\\git\\Chatting_test\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "C:\\source_tree\\PAPER_TALK\\git\\Chatting_test\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
                         "startLines": "4,2,3",
                         "startColumns": "4,4,4",

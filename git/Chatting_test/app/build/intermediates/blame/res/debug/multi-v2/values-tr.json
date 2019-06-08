@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\kvlks\\git\\Chatting_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tr\\values-tr.xml",
+            "outputFile": "C:\\source_tree\\PAPER_TALK\\git\\Chatting_test\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tr\\values-tr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\kvlks\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\45db86c2786dca76cc0b0b3b33776b4e\\res\\values-tr\\values-tr.xml",

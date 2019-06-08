@@ -1,5 +1,6 @@
 package com.example.hongseonggi.chatting_client;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -16,9 +17,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 
 public class Painting extends AppCompatActivity {
@@ -65,29 +70,92 @@ public class Painting extends AppCompatActivity {
             }
         });
 
-       /* save.setOnClickListener(new View.OnClickListener() {
+        save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //drawing.save(Painting.this);
-                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getApplicationContext());
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Painting.this);
                 alertDialogBuilder.setTitle("선택하세요!!");
                 alertDialogBuilder.setMessage("그림 or 글자 ?").setCancelable(false)
                         .setPositiveButton("그림",
                                 new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                dialog.cancel();
+
+                                    drawing.save(Painting.this);
+                                    PrintWriter out = new PrintWriter(MyGlobals.getInstance().getNetworkWriter(), true);
+                                    File file = new File(Environment.getExternalStorageDirectory() + "/ctos_image.png");
+                                    long file_length = file.length();
+                                    String nick_name = MyGlobals.getInstance().getNick_name();
+                                    out.println(nick_name + "@image_send_client_to_server@ctos_image.png@" + String.valueOf(file_length));
+
+                                    try {
+                                        FileInputStream fis = new FileInputStream(file);
+                                        DataInputStream dis = new DataInputStream(fis);
+                                        DataOutputStream dos = new DataOutputStream(MyGlobals.getInstance().getSocket().getOutputStream());
+
+                                        int len;
+                                        int total_len = 0;
+                                        int size = 1024;
+                                        byte[] data = new byte[size];
+                                        while ((len = dis.read(data)) != -1) {
+                                            total_len += len;
+                                            dos.write(data,0,len);
+                                            dos.flush();
+                                            if (total_len >= file_length) {
+                                                break;
+                                            }
+                                        }
+
+                                    }catch (Exception e) { }
+
+
+                                    out.println(nick_name + "@image_send_server_to_client@ctos_image.png@");
+                                    Painting.this.finish();
+
                                 }
                                 }).setNegativeButton("글자", new DialogInterface.OnClickListener() {
+
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
-                                        dialog.cancel();
+                                        drawing.save(Painting.this);
+
+                                        PrintWriter out = new PrintWriter(MyGlobals.getInstance().getNetworkWriter(), true);
+                                        File file = new File(Environment.getExternalStorageDirectory() + "/ctos_image.png");
+                                        long file_length = file.length();
+                                        String nick_name = MyGlobals.getInstance().getNick_name();
+                                        out.println(nick_name + "@image_send_client_to_server_hangeul@ctos_image.png@" + String.valueOf(file_length));
+
+                                        try {
+                                            FileInputStream fis = new FileInputStream(file);
+                                            DataInputStream dis = new DataInputStream(fis);
+                                            DataOutputStream dos = new DataOutputStream(MyGlobals.getInstance().getSocket().getOutputStream());
+
+                                            int len;
+                                            int total_len = 0;
+                                            int size = 1024;
+                                            byte[] data = new byte[size];
+                                            while ((len = dis.read(data)) != -1) {
+                                                total_len += len;
+                                                dos.write(data,0,len);
+                                                dos.flush();
+                                                if (total_len >= file_length) {
+                                                    break;
+                                                }
+                                            }
+
+                                        }catch (Exception e) { }
+
+                                        //Intent intent = new Intent(getApplicationContext(), Chatting.class);
+                                        //startActivity(intent);
+                                        Painting.this.finish();
+
                                         }
                                 });
                                         AlertDialog alertDialog = alertDialogBuilder.create();
                                         alertDialog.show();
                                     }
-        });*/
+        });
     }
     public void onClick(View v)
     {
@@ -108,3 +176,4 @@ public class Painting extends AppCompatActivity {
         }
     }
 }
+

@@ -28,7 +28,7 @@ import java.util.Date;
 public class DrawView extends View implements View.OnTouchListener{
     private  ArrayList<PaintPoint> points = new ArrayList<>();
     private int color = Color.BLACK; // 선 색
-    private int lineWith = 3; // 선 두께
+    private int lineWith = 100; // 선 두께
 
 
     public DrawView(Context context){
@@ -56,6 +56,14 @@ public class DrawView extends View implements View.OnTouchListener{
        switch(event.getAction()){
            case MotionEvent.ACTION_MOVE:
                Paint p = new Paint();
+               p.setAlpha(255);
+               p.setDither(true);
+               p.setStrokeJoin(Paint.Join.ROUND);
+               p.setStrokeCap(Paint.Cap.ROUND);
+
+               p.setAntiAlias(true);
+               //그리기 스타일을 선으로 설정
+               p.setStyle(Paint.Style.STROKE);
                p.setColor(color);
                p.setStrokeWidth(lineWith);
                points.add(new PaintPoint(event.getX(), event.getY(),true,p));
@@ -95,7 +103,7 @@ public class DrawView extends View implements View.OnTouchListener{
        // @SuppressLint("SimpleDateFormat")SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmss");
         //Date currentTime = new Date();
         //String dateString = formatter.format(currentTime);
-        String filename = "drawImage.png";
+        String filename = "ctos_image.png";
         try{
             File file = new File(Environment.getExternalStorageDirectory(),filename);
             if(file.createNewFile())
